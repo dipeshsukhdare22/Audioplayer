@@ -1,0 +1,100 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-image: url(./asset/images/img1.jpg);
+    background-repeat: no-repeat;
+    background-size: 1500px 900px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+    margin-left: 100px;
+}
+h2{
+    font-weight: 500;
+    text-align: center;
+    justify-content: center;
+}
+.card{
+    background-color: rgb(177, 254, 228);
+    box-shadow: -5px -5px 10px #fff, 5px 5px 10px #555;
+    width: 350px;
+    height: 50%;
+    margin-top: -50px;
+    padding: 25px;
+    border-radius: 25px;
+    position: relative;
+}
+.playlist{
+    list-style-type: none;
+    padding: 0;
+    margin-top: 10px;
+}
+.playlist > li {
+    background-color: #fff;
+    box-shadow: -3px -3px 2px #fff, 3px 3px 2px #555;
+    margin-bottom: 10px;
+    padding: 4px 10px;
+    border-radius: 10px;
+    width: 85%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+.playlist > li > img{
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    border-radius: 4px;
+}
+.button-container{
+   display: flex;
+   justify-content: space-between;
+   margin-top: 20px;
+}
+.button{
+    cursor: pointer;
+}
+.circle{
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+.circle1{
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    right: 15px;
+    top: 315px;
+}
+.hide{
+    display: none;
+}
+.volume{
+    position: absolute;
+    right: -80px;
+    transform: rotate(-90deg);
+    top: 105px;
+    width: 230px;
+    height: 160px;
+}
+.img{
+    right: -70px;
+}
+.progress{
+    background-color: #555;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+.progress > .status{
+    width: 5%;
+    background-color: red;
+    height: 5px;
+    border-radius: 10px;
+}

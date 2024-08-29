@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music Card - Audio player</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <div class="card">  
+    <h2>Music Card</h2>
+    <img src="./asset/images/playlist.png" alt="">
+    <ul id="playlist" class="playlist">
+      <li data-src="./asset/songs/1.mp3">
+        <img src="./asset/images/record.png" alt="music cover">Song 1
+      </li>
+      <li data-src="./asset/songs/2.mp3">
+        <img src="./asset/images/record.png" alt="music cover">Song 2
+      </li>
+      <li data-src="./asset/songs/3.mp3">
+        <img src="./asset/images/record.png" alt="music cover">Song 3
+      </li>
+      <li data-src="./asset/songs/4.mp3">
+        <img src="./asset/images/record.png" alt="music cover">Song 4
+      </li>
+      <li data-src="./asset/songs/5.mp3">
+        <img src="./asset/images/record.png" alt="music cover">Song 5
+      </li>
+    </ul>
+
+    <div class="progress">
+      <div class="status"></div>
+    </div>
+
+    <div class="button-container">
+      <button class="button circle" onclick="prevTrack()"> <img src="./asset/images/previous.png" alt=""></button>
+      <button id="playBtn" class="button circle" onclick="playTrack()"> <img src="./asset/images/play.png"
+          alt=""></button>
+      <button id="pauseBtn" class="button circle hide" onclick="pauseTrack()"> <img src="./asset/images/pause.png"
+          alt=""></button>
+      <button class="button circle" onclick="nextTrack()"> <img src="./asset/images/next.png" alt=""></button>
+    </div>
+
+    <input type="range" class="volume">
+    <button class="button circle1"> <img src="./asset/images/volume.png" alt=""></button>
+  </div>
+  <script src="./jsp.js"></script>
+</body>
+</html>
